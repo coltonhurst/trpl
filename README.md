@@ -1,4 +1,4 @@
 # trpl
 Notes &amp; Code from "[The Rust Programming Language](https://doc.rust-lang.org/book/)"
 
-Going through the 2018 version.
+Starting fresh- going through the 2018 book version as of May 2020 with Rust version 1.43.
