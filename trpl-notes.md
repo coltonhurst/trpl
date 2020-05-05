@@ -34,7 +34,7 @@ My notes from [The Rust Programming Language](https://doc.rust-lang.org/stable/b
 
 Rust macros have an exclamation point `!`. In the example below, `println!` is a macro.
 
-```
+```rust
 fn main() {
     println!("Hello, world!");
 }
