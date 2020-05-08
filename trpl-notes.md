@@ -28,7 +28,7 @@ My notes from [The Rust Programming Language](https://doc.rust-lang.org/stable/b
 
 ### Notes
 
-* `Cargo.toml` is Cargo's config file for your project (written in [TOML](https://github.com/toml-lang/toml)).
+`Cargo.toml` is Cargo's configuration file for your project (written in [TOML](https://github.com/toml-lang/toml)).
 
 ## Macros
 
@@ -39,3 +39,31 @@ fn main() {
     println!("Hello, world!");
 }
 ```
+
+## Variables & References
+
+### Notes
+
+Variables are immutable by default. To make a mutable variable, add the reserved word `mut`. Example: `let mut foo = 5;`
+
+References are immutable by default.
+
+## Functions
+
+### Notes
+
+#### Associated Functions
+
+`::` signifies a function is an *associated function*. Example:
+
+```rust
+let mut guess = String::new();
+```
+
+In the above example, `::new` indicates the `new` is an *associated function* of the `String` type. This is implemented on the type `String`, rather than on an instance of the `String` type (also known as a *static method* in other languages).
+
+## Enumerations
+
+### Notes
+
+An Enumeration (or "enum") is a "type that can have a fixed set of values, and those values are called the enum’s *variants*."
