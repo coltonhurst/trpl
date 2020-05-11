@@ -1,6 +1,6 @@
 # TRPL Notes
 
-My notes from [The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html). I have attempted to group these notes logically rather than the sequential order they appear in the book.
+Some notes from [The Rust Programming Language](https://doc.rust-lang.org/stable/book/title-page.html). I have attempted to group these notes logically rather than the sequential order they appear in the book. Not much here.
 
 ## General Commands
 
@@ -25,6 +25,8 @@ My notes from [The Rust Programming Language](https://doc.rust-lang.org/stable/b
 * Build & run a project with `cargo run`
 * Build a project for release with: `cargo build --release`
 * Check your code to make sure it compiles, without creating the executable (faster than the whole build process): `cargo check`
+* Update dependencies with: `cargo update` ([info](https://doc.rust-lang.org/cargo/commands/cargo-update.html))
+* View dependency docs with `cargo doc --open` (builds documentation provided by all of your dependencies locally and opens it in your browser)
 
 ### Notes
 
@@ -47,6 +49,10 @@ fn main() {
 Variables are immutable by default. To make a mutable variable, add the reserved word `mut`. Example: `let mut foo = 5;`
 
 References are immutable by default.
+
+Rust allows you to "shadow" variables.
+
+> This feature is often used in situations in which you want to convert a value from one type to another type. Shadowing lets us reuse the guess variable name rather than forcing us to create two unique variables, such as guess_str and guess for example.
 
 ## Functions
 
